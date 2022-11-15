@@ -1,7 +1,7 @@
 ---
 title: "assignment_b1"
 author: "Mingyuan Du"
-date: "2022-11-03"
+date: "2022-11-15"
 output: github_document
 ---
 
@@ -28,8 +28,8 @@ The goal of assignmentb1andb2dukedudu is to calculate the summary stats (mean an
 You can install the development version of assignmentb1andb2dukedudu from [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("stat545ubc-2022/assignment-b1-and-b2-dukedudu", ref=0.1.0)
+install.packages("devtools")
+devtools::install_github("stat545ubc-2022/assignment-b1-and-b2-dukedudu")
 ```
 
 ## Example

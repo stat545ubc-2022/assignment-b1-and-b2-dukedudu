@@ -1,7 +1,7 @@
 assignment_b1
 ================
 Mingyuan Du
-2022-11-03
+2022-11-15
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -19,8 +19,8 @@ You can install the development version of assignmentb1andb2dukedudu
 from [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("stat545ubc-2022/assignment-b1-and-b2-dukedudu", ref=0.1.0)
+install.packages("devtools")
+devtools::install_github("stat545ubc-2022/assignment-b1-and-b2-dukedudu")
 ```
 
 ## Example
