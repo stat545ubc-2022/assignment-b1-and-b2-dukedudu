@@ -1,0 +1,46 @@
+---
+title: "assignment_b1"
+author: "Mingyuan Du"
+date: "2022-11-03"
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# assignmentb1andb2dukedudu
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of assignmentb1andb2dukedudu is to calculate the summary stats (mean and median) of given target stats label and group label.
+
+## Installation
+
+You can install the development version of assignmentb1andb2dukedudu from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("stat545ubc-2022/assignment-b1-and-b2-dukedudu", ref=0.1.0)
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(assignmentb1andb2dukedudu)
+library(palmerpenguins)
+library(dplyr)
+library(tibble)
+produce_mean_median_summarise(penguins, island, bill_depth_mm, TRUE)
+produce_mean_median_summarise(penguins, island, bill_length_mm, TRUE)
+```
