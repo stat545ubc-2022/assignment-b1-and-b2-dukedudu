@@ -1,4 +1,5 @@
 # Test case 1: function should be terminated if the inputs' types are wrong.
+library(palmerpenguins)
 test_case_1 <- test_that("Testing function input type, target_summarise_col_label should be numeric value column", {
   expect_error(produce_mean_median_summarise(penguins, island, sex, TRUE),'The data is not a tibble or the variable target_summarise_col_label should be in numerical format.')
   expect_error(produce_mean_median_summarise(numeric(0), island, sex, TRUE),'The data is not a tibble or the variable target_summarise_col_label should be in numerical format.')

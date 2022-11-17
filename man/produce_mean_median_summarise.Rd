@@ -30,8 +30,6 @@ Produce Mean Median Summarise
 the function is designed for calculating the summary stats (mean and median) of given target stats label and group label.
 }
 \examples{
-library(palmerpenguins)
-library(dplyr)
-library(tibble)
 produce_mean_median_summarise(palmerpenguins::penguins, island, bill_depth_mm, TRUE)
+produce_mean_median_summarise(palmerpenguins::penguins, island, bill_length_mm, TRUE)
 }

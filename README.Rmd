@@ -40,7 +40,6 @@ This is a basic example which shows you how to solve a common problem:
 library(assignmentb1andb2dukedudu)
 library(palmerpenguins)
 library(dplyr)
-library(tibble)
 produce_mean_median_summarise(penguins, island, bill_depth_mm, TRUE)
 produce_mean_median_summarise(penguins, island, bill_length_mm, TRUE)
 ```

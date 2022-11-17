@@ -29,8 +29,7 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(assignmentb1andb2dukedudu)
-library(palmerpenguins)
-library(dplyr)
+#> Loading required package: dplyr
 #> 
 #> Attaching package: 'dplyr'
 #> The following objects are masked from 'package:stats':
@@ -39,7 +38,9 @@ library(dplyr)
 #> The following objects are masked from 'package:base':
 #> 
 #>     intersect, setdiff, setequal, union
-library(tibble)
+#> Loading required package: tibble
+library(palmerpenguins)
+library(dplyr)
 produce_mean_median_summarise(penguins, island, bill_depth_mm, TRUE)
 #> # A tibble: 3 × 3
 #>   island      avg median

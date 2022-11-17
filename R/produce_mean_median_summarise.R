@@ -1,5 +1,8 @@
 #' @title Produce Mean Median Summarise
 #' @details the function is designed for calculating the summary stats (mean and median) of given target stats label and group label.
+#' @import dplyr
+#' @import tibble
+#'
 #' @param .data the data (has to be in tibble version)
 #' @param col_label the data column will be used for grouping.
 #' @param target_summarise_col_label is the numeric data column will be used to calculate the statistic values.
@@ -7,9 +10,6 @@
 #' @return The mean and median target_summarise_col_label of the data grouped by col_label
 #' @export
 #' @examples
-#' library(palmerpenguins)
-#' library(dplyr)
-#' library(tibble)
 #' produce_mean_median_summarise(palmerpenguins::penguins, island, bill_depth_mm, TRUE)
 #' produce_mean_median_summarise(palmerpenguins::penguins, island, bill_length_mm, TRUE)
 produce_mean_median_summarise <- function(.data, col_label, target_summarise_col_label, na.rm=TRUE) {
