@@ -24,7 +24,7 @@ produce_mean_median_summarise <- function(.data, col_label, target_summarise_col
   }
   stats_values_summary <- .data %>% # load data
     group_by({{col_label}}) %>% # group data by `var_group`
-    summarise(avg = mean({{target_summarise_col_label}}, na.rm = na.rm), median = median({{target_summarise_col_label}}, na.rm = na.rm))  # get the median and mean of target_summarise_col_label in col_label group, and users can decide whether remove NA or not.
+    summarise(avg = mean({{target_summarise_col_label}}, na.rm = na.rm), median = stats::median({{target_summarise_col_label}}, na.rm = na.rm))  # get the median and mean of target_summarise_col_label in col_label group, and users can decide whether remove NA or not.
 
   return(stats_values_summary)
 }
