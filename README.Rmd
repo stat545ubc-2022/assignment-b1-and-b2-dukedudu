@@ -39,7 +39,6 @@ This is a basic example which shows you how to solve a common problem:
 ```{r example}
 library(assignmentb1andb2dukedudu)
 library(palmerpenguins)
-library(dplyr)
 produce_mean_median_summarise(penguins, island, bill_depth_mm, TRUE)
 produce_mean_median_summarise(penguins, island, bill_length_mm, TRUE)
 ```

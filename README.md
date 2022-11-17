@@ -40,7 +40,6 @@ library(assignmentb1andb2dukedudu)
 #>     intersect, setdiff, setequal, union
 #> Loading required package: tibble
 library(palmerpenguins)
-library(dplyr)
 produce_mean_median_summarise(penguins, island, bill_depth_mm, TRUE)
 #> # A tibble: 3 × 3
 #>   island      avg median
